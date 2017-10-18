@@ -3,9 +3,17 @@
 require_once('conexion\SicuDAO.php');
 require_once('dbo\Cliente.php');
 
-class ClienteDAO extends SicuDAO {
+/**
+ * Class ClienteDAO
+ */
+class ClienteDAO extends SicuDAO
+{
 
-    public function getClientesAll(){
+    /**
+     * @return array
+     */
+    public function getClientesAll()
+    {
 
         $pdo = $this->getPDO();
 
@@ -23,22 +31,35 @@ class ClienteDAO extends SicuDAO {
 
     }
 
-    public function getClienteById($id){
-        
-                $pdo = $this->getPDO();
-        
-                $sql = "SELECT
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function getClienteById($id)
+    {
+
+        $pdo = $this->getPDO();
+
+        $sql = "SELECT
                         cli.*,
                         com.nombre_comuna
                         FROM cliente cli
                         INNER JOIN comuna com ON (cli.comuna_idcomuna = com.idcomuna)
                         WHERE cli.idcliente = $id";
-        
-                $q = $pdo->query($sql);
-        
-                $res = $q->fetchObject(PDO::FETCH_CLASS, "Cliente");
-        
-                return $res;
-        
-            }
+
+        $q = $pdo->query($sql);
+
+        $res = $q->fetchObject(PDO::FETCH_CLASS, "Cliente");
+
+        return $res;
+
+    }
+
+    public function deleteCliente($id){
+        $pdo = $this->getPDO();
+
+        $sql = "DELETE FROM cliente WHERE idcliente = $id";
+
+        $pdo->query($sql);
+    }
 }

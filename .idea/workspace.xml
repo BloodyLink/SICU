@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="470ab0e3-dc13-4a10-85bb-7e007f630bc7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/ProductoDAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/ClienteDAO.php" afterPath="$PROJECT_DIR$/dao/ClienteDAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/ColegioDAO.php" afterPath="$PROJECT_DIR$/dao/ColegioDAO.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Comuna.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbo/Comuna.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComunaDAO.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/ComunaDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="55" column="49" lean-forward="false" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+              <folding>
+                <marker date="1508301789918" expanded="true" signature="268:441" ph="SELECT com.*... comuna" />
+                <marker date="1508301789918" expanded="true" signature="781:882" ph="INSERT INTO comuna... " />
+                <marker date="1508301789918" expanded="true" signature="1152:1188" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CursoDAO.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/CursoDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="96" column="47" lean-forward="false" selection-start-line="96" selection-start-column="47" selection-end-line="96" selection-end-column="47" />
+              <folding>
+                <marker date="1508301820775" expanded="true" signature="264:440" ph="SELECT cur.*... curso" />
+                <marker date="1508301820775" expanded="true" signature="730:953" ph="SELECT cur.*... curso" />
+                <marker date="1508301820775" expanded="true" signature="1352:1490" ph="INSERT INTO curso... " />
+                <marker date="1508301820775" expanded="true" signature="1818:1880" ph="UPDATE curso... " />
+                <marker date="1508301820775" expanded="true" signature="1818:1910" ph="UPDATE curso... " />
+                <marker date="1508301820775" expanded="true" signature="1818:1920" ph="UPDATE curso... " />
+                <marker date="1508301820775" expanded="true" signature="1818:1921" ph="UPDATE curso... " />
+                <marker date="1508301820775" expanded="true" signature="1818:1971" ph="UPDATE curso... " />
+                <marker date="1508301820775" expanded="true" signature="1818:1972" ph="UPDATE curso... " />
+                <marker date="1508301820775" expanded="true" signature="1818:2019" ph="UPDATE curso... " />
+                <marker date="1508301820775" expanded="true" signature="1818:2020" ph="UPDATE curso... " />
+                <marker date="1508301820775" expanded="true" signature="2299:2333" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductoDAO.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dao/ProductoDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+              <folding>
+                <marker date="1508302424212" expanded="true" signature="206:510" ph="SELECT prod.... producto" />
+                <marker date="1508302424212" expanded="true" signature="801:1105" ph="SELECT prod.... producto" />
+                <marker date="1508302424212" expanded="true" signature="1823:1839" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:1842" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:1880" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:1881" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:1934" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:1935" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:1991" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:1992" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2043" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2044" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2097" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2098" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2145" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2146" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2182" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2183" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2226" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2227" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2280" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2281" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2329" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="1823:2330" ph="UPDATE produ... " />
+                <marker date="1508302424212" expanded="true" signature="2610:2650" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Producto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbo/Producto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClienteDAO.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/ClienteDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="62" selection-end-column="26" />
+              <folding>
+                <marker date="1508301637739" expanded="true" signature="273:447" ph="SELECT cli.*... cliente" />
+                <marker date="1508301637739" expanded="true" signature="723:976" ph="SELECT cli.*... cliente" />
+                <marker date="1508301637739" expanded="true" signature="1196:1233" ph="DELETE FROM " />
+                <marker date="1508301637739" expanded="true" signature="1196:1234" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Categoria.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbo/Categoria.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColegioDAO.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/ColegioDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="124" selection-end-column="5" />
+              <folding>
+                <marker date="1508301722539" expanded="true" signature="239:415" ph="SELECT col.*... colegio" />
+                <marker date="1508301722539" expanded="true" signature="700:955" ph="SELECT col.*... colegio" />
+                <marker date="1508301722539" expanded="true" signature="1285:1516" ph="SELECT col.*... colegio" />
+                <marker date="1508301722539" expanded="true" signature="1898:2022" ph="INSERT INTO colegio... " />
+                <marker date="1508301722539" expanded="true" signature="2554:2572" ph="UPDATE coleg... " />
+                <marker date="1508301722539" expanded="true" signature="2554:2626" ph="UPDATE coleg... " />
+                <marker date="1508301722539" expanded="true" signature="2554:2673" ph="UPDATE coleg... " />
+                <marker date="1508301722539" expanded="true" signature="2554:2713" ph="UPDATE coleg... " />
+                <marker date="1508301722539" expanded="true" signature="2554:2714" ph="UPDATE coleg... " />
+                <marker date="1508301722539" expanded="true" signature="2554:2762" ph="UPDATE coleg... " />
+                <marker date="1508301722539" expanded="true" signature="2554:2763" ph="UPDATE coleg... " />
+                <marker date="1508301722539" expanded="true" signature="3041:3079" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SicuDAO.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conexion/SicuDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/dao/ClienteDAO.php" />
+        <option value="$PROJECT_DIR$/dao/ColegioDAO.php" />
+        <option value="$PROJECT_DIR$/dao/ComunaDAO.php" />
+        <option value="$PROJECT_DIR$/dao/CursoDAO.php" />
+        <option value="$PROJECT_DIR$/dao/ProductoDAO.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1346" />
+    <option name="height" value="720" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SICU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SICU" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="SICU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SICU" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="conexion" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="SICU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SICU" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dao" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="SICU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SICU" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dbo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="470ab0e3-dc13-4a10-85bb-7e007f630bc7" name="Default" comment="" />
+      <created>1508298535379</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1508298535379</updated>
+      <workItem from="1508298540769" duration="3942000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3942000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1346" height="720" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16917293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dbo/Comuna.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexion/SicuDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbo/Categoria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbo/Producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/ClienteDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="62" selection-end-column="26" />
+          <folding>
+            <marker date="1508301637739" expanded="true" signature="273:447" ph="SELECT cli.*... cliente" />
+            <marker date="1508301637739" expanded="true" signature="723:976" ph="SELECT cli.*... cliente" />
+            <marker date="1508301637739" expanded="true" signature="1196:1233" ph="DELETE FROM " />
+            <marker date="1508301637739" expanded="true" signature="1196:1234" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/ColegioDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="124" selection-end-column="5" />
+          <folding>
+            <marker date="1508301722539" expanded="true" signature="239:415" ph="SELECT col.*... colegio" />
+            <marker date="1508301722539" expanded="true" signature="700:955" ph="SELECT col.*... colegio" />
+            <marker date="1508301722539" expanded="true" signature="1285:1516" ph="SELECT col.*... colegio" />
+            <marker date="1508301722539" expanded="true" signature="1898:2022" ph="INSERT INTO colegio... " />
+            <marker date="1508301722539" expanded="true" signature="2554:2572" ph="UPDATE coleg... " />
+            <marker date="1508301722539" expanded="true" signature="2554:2626" ph="UPDATE coleg... " />
+            <marker date="1508301722539" expanded="true" signature="2554:2673" ph="UPDATE coleg... " />
+            <marker date="1508301722539" expanded="true" signature="2554:2713" ph="UPDATE coleg... " />
+            <marker date="1508301722539" expanded="true" signature="2554:2714" ph="UPDATE coleg... " />
+            <marker date="1508301722539" expanded="true" signature="2554:2762" ph="UPDATE coleg... " />
+            <marker date="1508301722539" expanded="true" signature="2554:2763" ph="UPDATE coleg... " />
+            <marker date="1508301722539" expanded="true" signature="3041:3079" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/ComunaDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="55" column="49" lean-forward="false" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+          <folding>
+            <marker date="1508301789918" expanded="true" signature="268:441" ph="SELECT com.*... comuna" />
+            <marker date="1508301789918" expanded="true" signature="781:882" ph="INSERT INTO comuna... " />
+            <marker date="1508301789918" expanded="true" signature="1152:1188" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/CursoDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="96" column="47" lean-forward="false" selection-start-line="96" selection-start-column="47" selection-end-line="96" selection-end-column="47" />
+          <folding>
+            <marker date="1508301820775" expanded="true" signature="264:440" ph="SELECT cur.*... curso" />
+            <marker date="1508301820775" expanded="true" signature="730:953" ph="SELECT cur.*... curso" />
+            <marker date="1508301820775" expanded="true" signature="1352:1490" ph="INSERT INTO curso... " />
+            <marker date="1508301820775" expanded="true" signature="1818:1880" ph="UPDATE curso... " />
+            <marker date="1508301820775" expanded="true" signature="1818:1910" ph="UPDATE curso... " />
+            <marker date="1508301820775" expanded="true" signature="1818:1920" ph="UPDATE curso... " />
+            <marker date="1508301820775" expanded="true" signature="1818:1921" ph="UPDATE curso... " />
+            <marker date="1508301820775" expanded="true" signature="1818:1971" ph="UPDATE curso... " />
+            <marker date="1508301820775" expanded="true" signature="1818:1972" ph="UPDATE curso... " />
+            <marker date="1508301820775" expanded="true" signature="1818:2019" ph="UPDATE curso... " />
+            <marker date="1508301820775" expanded="true" signature="1818:2020" ph="UPDATE curso... " />
+            <marker date="1508301820775" expanded="true" signature="2299:2333" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/ProductoDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <folding>
+            <marker date="1508302424212" expanded="true" signature="206:510" ph="SELECT prod.... producto" />
+            <marker date="1508302424212" expanded="true" signature="801:1105" ph="SELECT prod.... producto" />
+            <marker date="1508302424212" expanded="true" signature="1823:1839" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:1842" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:1880" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:1881" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:1934" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:1935" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:1991" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:1992" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2043" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2044" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2097" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2098" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2145" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2146" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2182" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2183" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2226" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2227" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2280" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2281" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2329" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="1823:2330" ph="UPDATE produ... " />
+            <marker date="1508302424212" expanded="true" signature="2610:2650" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
