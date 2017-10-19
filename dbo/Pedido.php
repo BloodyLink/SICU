@@ -8,6 +8,76 @@ class Pedido {
     var $medio_pago_idmedio_pago;
     var $comuna_idcomuna;
     var $cliente_idcliente;
+    var $nombre_medio_pago;
+    var $nombre_estado;
+    var $nombre_comuna;
+    var $rut_cliente;
+
+    /**
+     * @return mixed
+     */
+    public function getNombreMedioPago()
+    {
+        return $this->nombre_medio_pago;
+    }
+
+    /**
+     * @param mixed $nombre_medio_pago
+     */
+    public function setNombreMedioPago($nombre_medio_pago)
+    {
+        $this->nombre_medio_pago = $nombre_medio_pago;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNombreEstado()
+    {
+        return $this->nombre_estado;
+    }
+
+    /**
+     * @param mixed $nombre_estado
+     */
+    public function setNombreEstado($nombre_estado)
+    {
+        $this->nombre_estado = $nombre_estado;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNombreComuna()
+    {
+        return $this->nombre_comuna;
+    }
+
+    /**
+     * @param mixed $nombre_comuna
+     */
+    public function setNombreComuna($nombre_comuna)
+    {
+        $this->nombre_comuna = $nombre_comuna;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRutCliente()
+    {
+        return $this->rut_cliente;
+    }
+
+    /**
+     * @param mixed $rut_cliente
+     */
+    public function setRutCliente($rut_cliente)
+    {
+        $this->rut_cliente = $rut_cliente;
+    }
+
+
 
     function getIdpedido() {
         return $this->idpedido;

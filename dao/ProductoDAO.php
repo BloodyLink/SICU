@@ -80,6 +80,39 @@ class ProductoDAO extends SicuDAO {
         }
     }
 
+    public function insertProducto ($nombre, $uMayorista, $uMinorista, $pMayorista, $pMinorista, $pVenta, $foto, $marca, $categoria) {
+        try{
+            $pdo = $this->getPDO();
+
+            $sql = "INSERT INTO producto (
+                    nombre_producto,
+                    ubicacion_mayorista,
+                    ubicacion_minorista,
+                    precio_mayorista,
+                    precio_minorista,
+                    precio_venta,
+                    foto,
+                    marca_idmarca,
+                    categoria_idcategoria) 
+                    VALUES (
+                    '$nombre', 
+                    '$uMayorista', 
+                    '$uMinorista', 
+                    $pMayorista, 
+                    $pMinorista, 
+                    $pVenta, 
+                    '$foto', 
+                    $marca, 
+                    $categoria
+                    )";
+
+            $pdo->query($sql);
+
+        }catch (exception $e) {
+            throw new Exception("Hubo un error al ingresar Producto. " . $e->getMessage())
+        }
+    }
+
     public function deleteProducto($id){
         $pdo = $this->getPDO();
 
