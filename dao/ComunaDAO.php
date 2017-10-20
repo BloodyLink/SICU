@@ -1,7 +1,7 @@
 <?php
 
-require_once('conexion\SicuDAO.php');
-require_once('dbo\Comuna.php');
+require_once('..\conexion\SicuDAO.php');
+require_once('..\dbo\Comunas.php');
 
 /**
  * Class ComunaDAO
@@ -12,19 +12,18 @@ class ComunaDAO extends SicuDAO
     /**
      * @return array
      */
-    public function getComunasAll()
+    public function getComunasByRegion($idRegion)
     {
         $pdo = $this->getPDO();
 
-        $sql = "SELECT
-                com.*,
-                reg.nombre_region
-                FROM comuna com
-                INNER JOIN region reg ON (com.region_idregion = reg.idregion)";
+        $sql = "SELECT * FROM comunas c 
+                INNER JOIN provincias p ON (c.provincia_id = p.provincia_id)
+                INNER JOIN regiones r ON (p.region_id = r.region_id)
+                WHERE r.region_id = $idRegion";
 
         $q = $pdo->query($sql);
 
-        $res = $q->fetchAll(PDO::FETCH_CLASS, "Comuna");
+        $res = $q->fetchAll(PDO::FETCH_CLASS, "Comunas");
 
         return $res;
     }

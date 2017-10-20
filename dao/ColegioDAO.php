@@ -13,10 +13,8 @@ class ColegioDAO extends SicuDAO{
         $pdo = $this->getPDO();
 
         $sql = "SELECT 
-                col.*,
-                com.nombre_comuna
-                FROM colegio col
-                INNER JOIN comuna com ON (com.id_comuna = col.comuna_idcomuna)";
+                col.*
+                FROM colegio";
 
         $q = $pdo->query($sql);
 

@@ -1,6 +1,20 @@
+<?php
+
+    require_once ('dao\RegionesDAO.php');
+
+    $regionesDao = new RegionesDAO();
+
+    $regiones = $regionesDao->getRegionesAll();
+
+
+//    var_dump($regiones);
+?>
 <!doctype html>
 <head>
     <title>.:SICU:.</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/dataRetrieval.js"></script>
+    <meta charset="UTF-8">
 </head>
 <body>
 <h2>Bienvenido al panel de administración.</h2>
@@ -16,10 +30,18 @@
                 <br>
                 <input type="text" name="direccion" placeholder="Dirección" />
                 <br>
-                <select name="idRegion">
+                <select name="idRegion" id="idRegion">
                     <option>--Selecciona Region--</option>
+                    <?php
+
+                    foreach ($regiones as $r){
+                        echo '<option value="' . $r->region_id . '" >' . $r->region_numero . ' ' . $r->region_descripcion . '</option>';
+                    }
+
+                    ?>
                 </select>
-                <select name="idComuna">
+                <br>
+                <select name="idComuna" id="idComuna">
                     <option>--Selecciona comuna--</option>
                 </select>
                 <br>
