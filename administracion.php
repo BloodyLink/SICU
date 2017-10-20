@@ -1,11 +1,11 @@
 <?php
 
     require_once ('dao\RegionesDAO.php');
-
+    require_once ('dao\ColegioDAO.php');
     $regionesDao = new RegionesDAO();
-
+    $colegiosDao = new ColegioDAO();
     $regiones = $regionesDao->getRegionesAll();
-
+    $colegios = $colegiosDao->getColegiosAll();
 
 //    var_dump($regiones);
 ?>
@@ -25,7 +25,7 @@
         <td>
             <!-- Agregar Colegio-->
             <h3>Agregar Colegio</h3>
-            <form id="formAgregarColegio">
+            <form id="formAgregarColegio" method="post" action="action/agregarColegio.php">
                 <input type="text" name="nombreColegio" placeholder="Nombre del Colegio" />
                 <br>
                 <input type="text" name="direccion" placeholder="Dirección" />
@@ -45,12 +45,30 @@
                     <option>--Selecciona comuna--</option>
                 </select>
                 <br>
-                <input type="button" id="btnFormAgregarColegio" value="Guardar"/>
+                <input type="submit" id="btnFormAgregarColegio" value="Guardar"/>
             </form>
         </td>
         <td>
             <!-- Listar Colegios -->
-            <span id="listaColegios" width="200px" height="100px" style="overflow:scroll"></span>
+            <div id="listaColegios" width="200px" height="100px" style="overflow:scroll">
+                <table border="1">
+                    <?php
+                    foreach($colegios as $c){
+                        echo "<tr>";
+                        echo "<td>";
+                        echo $c->nombreColegio;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $c->direccion;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $c->comuna_idcomuna;
+                        echo "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </table>
+            </div>
         </td>
     </tr>
     <tr>
@@ -64,6 +82,11 @@
                 <br>
                 <select name="idColegio">
                     <option>--Selecciona colegio--</option>
+                    <?php
+                    foreach($colegios as $c){
+                        echo "<option value=" . $c->idColegio . ">" . $c->nombreColegio . " - " . $c->comuna_idcomuna . "</option>";
+                    }
+                    ?>
                 </select>
                 <br>
                 <input type="button" id="btnFormAgregarColegio" value="Guardar"/>
@@ -71,7 +94,7 @@
         </td>
         <td>
             <!-- Listar Cursos -->
-            <span id="listaCursos" width="200px" height="100px" style="overflow:scroll"></span>
+            <div id="listaCursos" width="200px" height="100px" style="overflow:scroll"></div>
         </td>
     </tr>
     <tr>
@@ -86,7 +109,7 @@
         </td>
         <td>
             <!-- Listar Categorias -->
-            <span id="listaCategorias" width="200px" height="100px" style="overflow:scroll"></span>
+            <div id="listaCategorias" width="200px" height="100px" style="overflow:scroll"></div>
         </td>
     </tr>
     <tr>
@@ -101,7 +124,7 @@
         </td>
         <td>
             <!-- Listar Marcas -->
-            <span id="listaMarcas" width="200px" height="100px" style="overflow:scroll"></span>
+            <div id="listaMarcas" width="200px" height="100px" style="overflow:scroll"></div>
         </td>
     </tr>
     <tr>
@@ -136,7 +159,7 @@
         </td>
         <td>
             <!-- Listar Productos -->
-            <span id="listaProductos" width="200px" height="100px" style="overflow:scroll"></span>
+            <div id="listaProductos" width="200px" height="100px" style="overflow:scroll"></div>
         </td>
     </tr>
     <tr>

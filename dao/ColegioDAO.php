@@ -1,7 +1,7 @@
 <?php
 
-require_once('conexion\SicuDAO.php');
-require_once('dbo\Colegio.php');
+require_once(dirname(__FILE__) . '\..\conexion\SicuDAO.php');
+require_once(dirname(__FILE__) . '\..\dbo\Colegio.php');
 
 
 class ColegioDAO extends SicuDAO{
@@ -14,7 +14,7 @@ class ColegioDAO extends SicuDAO{
 
         $sql = "SELECT 
                 col.*
-                FROM colegio";
+                FROM colegio col";
 
         $q = $pdo->query($sql);
 
