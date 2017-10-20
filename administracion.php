@@ -1,7 +1,15 @@
 <?php
 
-    require_once ('dao\RegionesDAO.php');
-    require_once ('dao\ColegioDAO.php');
+    spl_autoload_register(function ($class_name) {
+        include ('dao/' . $class_name . '.php');
+    });
+
+
+    session_start();
+
+    if(!isset($_SESSION["user"]))
+        header("location:login.php");
+
     $regionesDao = new RegionesDAO();
     $colegiosDao = new ColegioDAO();
     $regiones = $regionesDao->getRegionesAll();
@@ -19,6 +27,8 @@
 <body>
 <h2>Bienvenido al panel de administración.</h2>
 <a href="index.php">Volver a Index</a>
+<br>
+<a href="cerrarSesion.php">Cerrar Sesion</a>
 <br>
 <table>
     <tr>
