@@ -16,6 +16,9 @@
                 <br>
                 <input type="text" name="direccion" placeholder="Dirección" />
                 <br>
+                <select name="idRegion">
+                    <option>--Selecciona Region--</option>
+                </select>
                 <select name="idComuna">
                     <option>--Selecciona comuna--</option>
                 </select>
