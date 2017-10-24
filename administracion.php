@@ -12,8 +12,21 @@
 
     $regionesDao = new RegionesDAO();
     $colegiosDao = new ColegioDAO();
+    $cursosDao = new CursoDAO();
+    $categoriasDao = new CategoriaDAO();
+    $marcasDao = new MarcaDAO();
+    $productosDao = new ProductoDAO();
+
     $regiones = $regionesDao->getRegionesAll();
     $colegios = $colegiosDao->getColegiosAll();
+    $cursos = $cursosDao->getCursosAll();
+    $categorias = $categoriasDao->getCategoriasAll();
+    $marcas = $marcasDao->getMarcasAll();
+    $productos = $productosDao->getProductosAll();
+
+//echo "<pre>";
+//print_r($cursos);
+//echo "<pre>";
 
 //    var_dump($regiones);
 ?>
@@ -72,7 +85,7 @@
                         echo $c->direccion;
                         echo "</td>";
                         echo "<td>";
-                        echo $c->comuna_idcomuna;
+                        echo $c->nombre_comuna;
                         echo "</td>";
                         echo "</tr>";
                     }
@@ -85,7 +98,7 @@
         <td>
             <!-- Agregar Curso-->
             <h3>Agregar Curso</h3>
-            <form id="formAgregarCurso">
+            <form id="formAgregarCurso" method="post" action="action/agregarCurso.php">
                 <input type="text" name="nombreCurso" placeholder="Nombre del curso" />
                 <br>
                 <input type="text" name="cantidadAlumnos" placeholder="Cantidad Alumnos" />
@@ -94,54 +107,95 @@
                     <option>--Selecciona colegio--</option>
                     <?php
                     foreach($colegios as $c){
-                        echo "<option value=" . $c->idColegio . ">" . $c->nombreColegio . " - " . $c->comuna_idcomuna . "</option>";
+                        echo "<option value=" . $c->idColegio . ">" . $c->nombreColegio . " - " . $c->nombre_comuna . "</option>";
                     }
                     ?>
                 </select>
                 <br>
-                <input type="button" id="btnFormAgregarColegio" value="Guardar"/>
+                <input type="submit" id="btnFormAgregarColegio" value="Guardar"/>
             </form>
         </td>
         <td>
             <!-- Listar Cursos -->
-            <div id="listaCursos" width="200px" height="100px" style="overflow:scroll"></div>
+            <div id="listaCursos" width="200px" height="100px" style="overflow:scroll">
+                <table border="1">
+                    <?php
+                    foreach($cursos as $c){
+                        echo "<tr>";
+                        echo "<td>";
+                        echo $c->nombre_curso;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $c->cantidad_alumnos;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $c->nombreColegio;
+                        echo "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </table>
+            </div>
         </td>
     </tr>
     <tr>
         <td>
             <!-- Agregar Categoria-->
             <h3>Agregar Categoria</h3>
-            <form id="formAgregarCurso">
+            <form id="formAgregarCurso" method="post" action="action/agregarCategoria.php">
                 <input type="text" name="nombreCategoria" placeholder="Nombre de la categoria" />
                 <br>
-                <input type="button" id="btnFormAgregarColegio" value="Guardar"/>
+                <input type="submit" id="btnFormAgregarColegio" value="Guardar"/>
             </form>
         </td>
         <td>
             <!-- Listar Categorias -->
-            <div id="listaCategorias" width="200px" height="100px" style="overflow:scroll"></div>
+            <div id="listaCategorias" width="200px" height="100px" style="overflow:scroll">
+                <table border="1">
+                    <?php
+                    foreach($categorias as $c){
+                        echo "<tr>";
+                        echo "<td>";
+                        echo $c->nombre_categoria;
+                        echo "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </table>
+            </div>
         </td>
     </tr>
     <tr>
         <td>
             <!-- Agregar Marca-->
             <h3>Agregar Marca</h3>
-            <form id="formAgregarMarca">
+            <form id="formAgregarMarca" method="post" action="action/agregarMarca.php">
                 <input type="text" name="nombreMarca" placeholder="Nombre de la marca" />
                 <br>
-                <input type="button" id="btnFormAgregarMarca" value="Guardar"/>
+                <input type="submit" id="btnFormAgregarMarca" value="Guardar"/>
             </form>
         </td>
         <td>
             <!-- Listar Marcas -->
-            <div id="listaMarcas" width="200px" height="100px" style="overflow:scroll"></div>
+            <div id="listaMarcas" width="200px" height="100px" style="overflow:scroll">
+                <table border="1">
+                    <?php
+                    foreach($marcas as $m){
+                        echo "<tr>";
+                        echo "<td>";
+                        echo $m->nombre_marca;
+                        echo "</tr>";
+                    }
+                    ?>
+                </table>
+            </div>
         </td>
     </tr>
     <tr>
         <td>
             <!-- Agregar Producto-->
             <h3>Agregar Producto</h3>
-            <form id="formAgregarProducto">
+            <form id="formAgregarProducto" method="post" action="action/agregarProducto.php">
                 <input type="text" name="nombreProducto" placeholder="Nombre del Producto" />
                 <br>
                 <input type="text" name="uMayorista" placeholder="Ubicacion mayorista" />
@@ -158,13 +212,23 @@
                 <br>
                 <select name="marca">
                     <option>--Selecciona marca--</option>
+                    <?php
+                    foreach($marcas as $m){
+                        echo "<option value='" . $m->idmarca . "'>" . $m->nombre_marca . "</option>";
+                    }
+                    ?>
                 </select>
                 <br>
                 <select name="categoria">
                     <option>--Selecciona categoria--</option>
+                    <?php
+                    foreach($categorias as $c){
+                        echo "<option value='" . $c->idcategoria . "'>" . $c->nombre_categoria . "</option>";
+                    }
+                    ?>
                 </select>
                 <br>
-                <input type="button" id="btnFormAgregarColegio" value="Guardar"/>
+                <input type="submit" id="btnFormAgregarColegio" value="Guardar"/>
             </form>
         </td>
         <td>

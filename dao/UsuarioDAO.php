@@ -1,7 +1,7 @@
 <?php
 
-require_once('conexion\SicuDAO.php');
-require_once('dbo\Usuario.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\conexion\SicuDAO.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\dbo\Usuario.php');
 
 
 class UsuarioDAO extends SicuDAO {
@@ -10,13 +10,13 @@ class UsuarioDAO extends SicuDAO {
         try{
             $pdo = $this->getPDO();
 
-            $sql = "SELECT * FROM usuario WHERE usuario = $user AND pass = $pass";
+            $sql = "SELECT * FROM usuario WHERE usuario = '$user' AND password = '$pass'";
 
             $q = $pdo->query($sql);
 
-            $res = $q->fetchObject(PDO::FETCH_CLASS, "Usuario");
+            $res = $q->fetchAll(PDO::FETCH_CLASS, "Usuario");
 
-            return $res;
+            return $res[0];
 
         } catch (exception $e) {
             throw new Exception("Hubo un problema al adquirir datos del usuario $user." . $e->getMessage());

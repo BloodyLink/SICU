@@ -1,7 +1,7 @@
 <?php
 
-require_once('conexion\SicuDAO.php');
-require_once('dbo\Pedido.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\conexion\SicuDAO.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\dbo\Pedido.php');
 
 class PedidoDAO extends SicuDAO {
 

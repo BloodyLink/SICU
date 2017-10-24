@@ -1,7 +1,7 @@
 <?php
 
-require_once('conexion\SicuDAO.php');
-require_once('dbo\L1.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\conexion\SicuDAO.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\dbo\L1.php');
 
 class L1DAO extends SicuDAO {
 
@@ -48,7 +48,7 @@ class L1DAO extends SicuDAO {
             $pdo = $this->getPDO();
 
             $sql = "INSERT INTO L1 (nombre_l1, curso_idcurso)
-                    VALUES ('$nombre', $curso)"
+                    VALUES ('$nombre', $curso)";
 
             $pdo->query($sql);
         }catch (exception $e) {

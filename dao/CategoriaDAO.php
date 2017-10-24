@@ -1,7 +1,7 @@
 <?php
 
-require_once('conexion\SicuDAO.php');
-require_once('dbo\Categoria.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\conexion\SicuDAO.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\dbo\Categoria.php');
 
 class CategoriaDAO extends SicuDAO
 {
@@ -27,11 +27,11 @@ class CategoriaDAO extends SicuDAO
             $pdo = $this->getPDO();
 
             $sql = "INSERT INTO categoria (nombre_categoria) 
-                VALUES ($nombre)";
+                VALUES ('$nombre')";
 
             $pdo->query($sql);
         } catch (exception $e) {
-            throw new Exception("Hubo un problema al ingresar Categoria" . $e->getMessage())
+            throw new Exception("Hubo un problema al ingresar Categoria" . $e->getMessage());
         }
 
 

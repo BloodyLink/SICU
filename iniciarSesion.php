@@ -1,6 +1,6 @@
 <?php
 
-require_once(dirname(__FILE__) . '\..\dao\UsuarioDAO.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\dao\UsuarioDAO.php');
 
 
 $user = $_POST["user"];
@@ -10,10 +10,14 @@ $usuarioDao = new UsuarioDAO();
 
 $user = $usuarioDao->getUsuarioData($user, $pass);
 
+
+
 if($user != null){
 	session_start();
 
 	$_SESSION["user"] = $user->usuario;
+
+    header("location:administracion.php");
 }
 
 ?>

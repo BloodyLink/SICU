@@ -1,7 +1,7 @@
 <?php
 
-require_once('conexion\SicuDAO.php');
-require_once('dbo\Producto.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\conexion\SicuDAO.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\dbo\Producto.php');
 
 class ProductoDAO extends SicuDAO {
 
@@ -109,7 +109,7 @@ class ProductoDAO extends SicuDAO {
             $pdo->query($sql);
 
         }catch (exception $e) {
-            throw new Exception("Hubo un error al ingresar Producto. " . $e->getMessage())
+            throw new Exception("Hubo un error al ingresar Producto. " . $e->getMessage());
         }
     }
 

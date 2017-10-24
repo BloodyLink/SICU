@@ -1,7 +1,7 @@
 <?php
 
-require_once('conexion\SicuDAO.php');
-require_once('dbo\Curso.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\conexion\SicuDAO.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\dbo\Curso.php');
 
 /**
  * Class CursoDAO
@@ -39,7 +39,7 @@ class CursoDAO extends SicuDAO
 
         $sql = "SELECT
                 cur.*,
-                col.nombreColegio
+                col.nombreColegio as colegio_nombre
                 FROM curso cur
                 INNER JOIN colegio col ON (cur.colegio_idcolegio = col.idColegio)
                 WHERE cur.colegio_idcolegio = $idColegio";

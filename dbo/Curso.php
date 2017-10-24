@@ -5,6 +5,23 @@ class Curso {
     var $nombre_curso;
     var $cantidad_alumnos;
     var $Colegio_idColegio;
+    var $colegio_nombre;
+
+    /**
+     * @return mixed
+     */
+    public function getColegioNombre()
+    {
+        return $this->colegio_nombre;
+    }
+
+    /**
+     * @param mixed $colegio_nombre
+     */
+    public function setColegioNombre($colegio_nombre)
+    {
+        $this->colegio_nombre = $colegio_nombre;
+    }
     
     function getIdCurso() {
         return $this->idCurso;

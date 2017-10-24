@@ -1,7 +1,7 @@
 <?php
 
-require_once(dirname(__FILE__) . '\..\conexion\SicuDAO.php');
-require_once(dirname(__FILE__) . '\..\dbo\Colegio.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\conexion\SicuDAO.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '\sicu\dbo\Colegio.php');
 
 
 class ColegioDAO extends SicuDAO{
@@ -13,8 +13,10 @@ class ColegioDAO extends SicuDAO{
         $pdo = $this->getPDO();
 
         $sql = "SELECT 
-                col.*
-                FROM colegio col";
+                col.*,
+                com.comuna_nombre as nombre_comuna
+                FROM colegio col
+                INNER JOIN comunas com ON (com.idcomuna = col.comuna_idcomuna)";
 
         $q = $pdo->query($sql);
 
