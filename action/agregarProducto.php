@@ -2,12 +2,6 @@
 
 require_once('..\dao\ProductoDAO.php');
 
-//echo "<pre>";
-//print_r($_FILES);
-//echo "</pre>";
-////echo "'" . implode("', '", $_POST) . "'";
-//die();
-
 $nombre = $_POST["nombreProducto"];
 $uMayorista = $_POST["uMayorista"];
 $uMinorista = $_POST["uMinorista"];
