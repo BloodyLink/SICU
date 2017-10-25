@@ -312,12 +312,31 @@
             <h3>Agregar Lista</h3>
             <form method="post" action="agregarLista.php">
                 <input type="text" name="nombre_lista" placeholder="Nombre lista" />
+                <input type="submit" value="Guardar" />
             </form>
 
         </td>
         <td>
             <!-- Listar listas -->
-
+            <div id="listaL1" width="200px" height="100px" style="overflow:scroll">
+                <table border="1">
+                    <?php
+                    foreach($l1 as $l){
+                        echo "<tr>";
+                        echo "<td>";
+                        echo $l->nombre_l1;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $l->nombre_curso;
+                        echo "</td>";
+                        echo "<td>";
+                        echo "<a href="detalleLista.php">Detalle</a>";
+                        echo "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </table>
+            </div>
         </td>
     </tr>
 </table>
