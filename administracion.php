@@ -16,6 +16,7 @@
     $categoriasDao = new CategoriaDAO();
     $marcasDao = new MarcaDAO();
     $productosDao = new ProductoDAO();
+    $medioPagoDao = new MedioPagoDAO();
 
     $regiones = $regionesDao->getRegionesAll();
     $colegios = $colegiosDao->getColegiosAll();
@@ -23,9 +24,10 @@
     $categorias = $categoriasDao->getCategoriasAll();
     $marcas = $marcasDao->getMarcasAll();
     $productos = $productosDao->getProductosAll();
+    $mediosPago = $medioPagoDao->getMediosPagoAll();
 
 //echo "<pre>";
-//print_r($cursos);
+//print_r($mediosPago);
 //echo "<pre>";
 
 //    var_dump($regiones);
@@ -101,7 +103,7 @@
             <form id="formAgregarCurso" method="post" action="action/agregarCurso.php">
                 <input type="text" name="nombreCurso" placeholder="Nombre del curso" />
                 <br>
-                <input type="text" name="cantidadAlumnos" placeholder="Cantidad Alumnos" />
+                <input type="text" name="cantidadAlumnos" placeholder="Cantidad Alumnos" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
                 <br>
                 <select name="idColegio">
                     <option>--Selecciona colegio--</option>
@@ -233,24 +235,89 @@
         </td>
         <td>
             <!-- Listar Productos -->
-            <div id="listaProductos" width="200px" height="100px" style="overflow:scroll"></div>
+            <div id="listaProductos" width="200px" height="100px" style="overflow:scroll">
+                <table border="1">
+                    <?php
+                    foreach($productos as $p){
+                        echo "<tr>";
+                        echo "<td>";
+                        echo $p->nombre_producto;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $p->ubicacion_mayorista;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $p->ubicacion_minorista;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $p->precio_mayorista;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $p->precio_minorista;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $p->precio_venta;
+                        echo "</td>";
+                        echo "<td>";
+                        echo "<a href='uploads/" . $p->foto . "'>Foto</a>";
+                        echo "</td>";
+                        echo "<td>";
+                        echo $p->nombre_marca;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $p->nombre_categoria;
+                        echo "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </table>
+            </div>
         </td>
     </tr>
     <tr>
         <td>
             <!-- Agregar Medio de pago-->
             <h3>Agregar Medio de pago</h3>
-            <form id="formAgregarMedioPago">
+            <form id="formAgregarMedioPago" method="post" action="action/agregarMedioPago.php">
                 <input type="text" name="nombreMedioPago" placeholder="Nombre del medio de pago" />
                 <br>
-                <input type="text" name="porcentajeMedioPago" placeholder="% comision" />
+                <input type="text" name="porcentajeMedioPago" placeholder="% comision" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
                 <br>
-                <input type="button" id="btnFormAgregarMedioPago" value="Guardar"/>
+                <input type="submit" id="btnFormAgregarMedioPago" value="Guardar"/>
             </form>
         </td>
         <td>
             <!-- Listar Medios de pago -->
+            <div id="listaMediosPago" width="200px" height="100px" style="overflow:scroll">
+                <table border="1">
+                    <?php
+                    foreach($mediosPago as $m){
+                        echo "<tr>";
+                        echo "<td>";
+                        echo $m->nombre_medio_pago;
+                        echo "</td>";
+                        echo "<td>";
+                        echo $m->porcentaje_comision;
+                        echo "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <!-- Agregar Lista-->
+            <h3>Agregar Lista</h3>
+            <form method="post" action="agregarLista.php">
+                <input type="text" name="nombre_lista" placeholder="Nombre lista" />
+            </form>
 
+        </td>
+        <td>
+            <!-- Listar listas -->
+            
         </td>
     </tr>
 </table>
