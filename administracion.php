@@ -195,18 +195,18 @@
         <td>
             <!-- Agregar Producto-->
             <h3>Agregar Producto</h3>
-            <form id="formAgregarProducto" method="post" action="action/agregarProducto.php">
+            <form id="formAgregarProducto" method="post" action="action/agregarProducto.php" enctype="multipart/form-data">
                 <input type="text" name="nombreProducto" placeholder="Nombre del Producto" />
                 <br>
                 <input type="text" name="uMayorista" placeholder="Ubicacion mayorista" />
                 <br>
                 <input type="text" name="uMinorista" placeholder="Ubicacion minorista" />
                 <br>
-                <input type="text" name="pMayorista" placeholder="Precio mayorista" />
+                <input type="text" name="pMayorista" placeholder="Precio mayorista" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
                 <br>
-                <input type="text" name="pMinorista" placeholder="Precio minorista" />
+                <input type="text" name="pMinorista" placeholder="Precio minorista" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
                 <br>
-                <input type="text" name="pVenta" placeholder="Precio venta" />
+                <input type="text" name="pVenta" placeholder="Precio venta" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
                 <br>
                 Foto:<input type="file" name="foto" placeholder="foto" />
                 <br>
