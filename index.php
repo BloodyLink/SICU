@@ -34,10 +34,10 @@ $l1 = $l1Dao->getL1All();
 <hr>
 <ul>
     <li><a href="administracion.php">Administracion</a></li>
+    <hr>
+    <h3>Compra:</h3>
 <form method="post" action="action/realizarCompra.php">
-
-</form>
-Selecciona colegio: <br>
+    Selecciona colegio: <br>
     <select name="idColegio" id="idColegioLista">
         <option>--Selecciona Colegio--</option>
         <?php
@@ -58,5 +58,9 @@ Selecciona colegio: <br>
     <br>
     <input type="button" value="Ver lista de útiles" id="btnLista" />
     <span id="lista1"></span>
+    <br>
+    <input type="submit" value="Finalizar Compra" />
+</form>
+
 </body>
 </html>

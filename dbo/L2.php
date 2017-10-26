@@ -4,6 +4,25 @@ class L2{
     var $idL2;
     var $L1_idL1;
     var $cliente_idcliente;
+    var $data = array();
+
+    /**
+     * @return array
+     */
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    /**
+     * @param array $data
+     */
+    public function setData($data)
+    {
+        $this->data = $data;
+    }
+
+
     
     function getIdL2() {
         return $this->idL2;
