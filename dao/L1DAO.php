@@ -23,6 +23,20 @@ class L1DAO extends SicuDAO {
 
     }
 
+    public function getL1ByCurso ($idCurso){
+        $pdo = $this->getPDO();
+
+        $sql = "SELECT 
+                l1.idL1
+                FROM l1 
+                WHERE curso_idcurso = $idCurso";
+
+        $q = $pdo->query($sql);
+        $res = $q->fetchAll(PDO::FETCH_CLASS, "L1");
+
+        return $res[0];
+    }
+
     public function getL1ById($id){
 
         $pdo = $this->getPDO();

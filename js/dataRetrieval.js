@@ -11,6 +11,11 @@ $(document).ready(function(){
         getProductosByNombre($('#nombreProducto').val(), $('#lista').val());
     });
 
+    $('#btnLista').click(function(){
+        // alert($('#idCurso2').val());
+        getListaByCurso($('#idCurso2').val());
+    });
+
 });
 
 function getComunasByRegion(idRegion) {
@@ -43,5 +48,16 @@ function getProductosByNombre(nombre, lista) {
         }
     };
     xhttp.open("GET", "action/productoData.php?nombre=" + nombre + "&lista=" + lista, true);
+    xhttp.send();
+}
+
+function getListaByCurso(curso) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            $('#lista1').html(this.responseText);
+        }
+    };
+    xhttp.open("GET", "action/l1Data.php?curso=" + curso, true);
     xhttp.send();
 }

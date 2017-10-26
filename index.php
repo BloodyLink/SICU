@@ -24,6 +24,9 @@ $l1 = $l1Dao->getL1All();
 ?>
 <!doctype html>
 <head>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/dataRetrieval.js"></script>
+    <meta charset="UTF-8">
     <title>.:SICU:.</title>
 </head>
 <body>
@@ -31,8 +34,29 @@ $l1 = $l1Dao->getL1All();
 <hr>
 <ul>
     <li><a href="administracion.php">Administracion</a></li>
+<form method="post" action="action/realizarCompra.php">
 
-    
-</ul>
+</form>
+Selecciona colegio: <br>
+    <select name="idColegio" id="idColegioLista">
+        <option>--Selecciona Colegio--</option>
+        <?php
+        foreach($colegios as $c){
+            echo "<option value=" . $c->idColegio . ">" . $c->nombreColegio . " - " . $c->nombre_comuna . "</option>";
+        }
+        ?>
+    </select>
+    <br>
+    <select name="idCurso" id="idCurso2">
+        <option>--Selecciona Curso--</option>
+    </select>
+    <br>
+    <br>
+    <input type="text" name="nombreAlumno" placeholder="Nombre del alumno" />
+    <br>
+    <input type="text" name="apellidoAlumno" placeholder="Apellido del alumno" />
+    <br>
+    <input type="button" value="Ver lista de útiles" id="btnLista" />
+    <span id="lista1"></span>
 </body>
 </html>

@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="470ab0e3-dc13-4a10-85bb-7e007f630bc7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/blood.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/action/addToList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/action/agregarLista.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/action/cursoData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/action/productoData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/L1_ProductosDAO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/DIAGRAMA.png" afterPath="$PROJECT_DIR$/database/DIAGRAMA.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/diagrama_sicu.mwb" afterPath="$PROJECT_DIR$/database/diagrama_sicu.mwb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/diagrama_sicu.mwb.bak" afterPath="$PROJECT_DIR$/database/diagrama_sicu.mwb.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/action/l1Data.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administracion.php" afterPath="$PROJECT_DIR$/administracion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo/L1_Productos.php" afterPath="$PROJECT_DIR$/dbo/L1_Productos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/detalleLista.php" afterPath="$PROJECT_DIR$/detalleLista.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/L1DAO.php" afterPath="$PROJECT_DIR$/dao/L1DAO.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/dataRetrieval.js" afterPath="$PROJECT_DIR$/js/dataRetrieval.js" />
     </list>
@@ -26,53 +15,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="L1_Productos.php" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/dbo/L1_Productos.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="40">
-                    <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="18" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Producto.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/dbo/Producto.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="420">
-                    <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="dataRetrieval.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/js/dataRetrieval.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="220">
-                    <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="administracion.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/administracion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="340">
+              <caret line="107" column="89" lean-forward="true" selection-start-line="107" selection-start-column="89" selection-end-line="107" selection-end-column="153" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#td#1;n#tr#6;n#table#0;n#body#0;n#!!top" expanded="true" />
                 <marker date="1508980921497" expanded="true" signature="2396:2448" ph="..." />
@@ -83,16 +32,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="L1_ProductosDAO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/L1_ProductosDAO.php">
+      <file leaf-file-name="cursoData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action/cursoData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataRetrieval.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/dataRetrieval.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="l1Data.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/action/l1Data.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
               <folding>
-                <marker date="1508986893126" expanded="true" signature="289:506" ph="SELECT * FRO... L1_Productos" />
-                <marker date="1508986893126" expanded="true" signature="289:507" ph="SELECT * FRO... L1_Productos" />
-                <marker date="1508986893126" expanded="true" signature="767:919" ph="INSERT INTO L1_Productos... " />
+                <marker date="1509004172851" expanded="true" signature="423:601" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="L1DAO.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/L1DAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+              <folding>
+                <marker date="1508995805345" expanded="true" signature="255:413" ph="SELECT l1.*,... l1" />
+                <marker date="1508995805345" expanded="true" signature="627:721" ph="SELECT l1.id... l1" />
+                <marker date="1508995805345" expanded="true" signature="627:722" ph="SELECT l1.id... l1" />
+                <marker date="1508995805345" expanded="true" signature="937:1125" ph="SELECT l1.*,... l1" />
+                <marker date="1508995805345" expanded="true" signature="937:1126" ph="SELECT l1.*,... l1" />
+                <marker date="1508995805345" expanded="true" signature="1369:1383" ph="INSERT INTO L1... " />
+                <marker date="1508995805345" expanded="true" signature="1369:1457" ph="INSERT INTO L1... " />
+                <marker date="1508995805345" expanded="true" signature="1753:1888" ph="UPDATE L1 SE... " />
+                <marker date="1508995805345" expanded="true" signature="2147:2175" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="L1_Productos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbo/L1_Productos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Producto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbo/Producto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,25 +114,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+              <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productoData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/action/productoData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-              <folding>
-                <marker date="1508990533855" expanded="true" signature="261:373" ph="..." />
-                <marker date="1508990533855" expanded="true" signature="261:470" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -136,86 +130,6 @@
             <state relative-caret-position="80">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="6" selection-end-column="16" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="agregarLista.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/action/agregarLista.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cursoData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/action/cursoData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CursoDAO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/CursoDAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="64" />
-              <folding>
-                <marker date="1508811434397" expanded="true" signature="332:508" ph="SELECT cur.*... curso" />
-                <marker date="1508811434397" expanded="true" signature="798:1039" ph="SELECT cur.*... curso" />
-                <marker date="1508811434397" expanded="true" signature="1438:1576" ph="INSERT INTO curso... " />
-                <marker date="1508811434397" expanded="true" signature="1904:1966" ph="UPDATE curso... " />
-                <marker date="1508811434397" expanded="true" signature="1904:1996" ph="UPDATE curso... " />
-                <marker date="1508811434397" expanded="true" signature="1904:2006" ph="UPDATE curso... " />
-                <marker date="1508811434397" expanded="true" signature="1904:2007" ph="UPDATE curso... " />
-                <marker date="1508811434397" expanded="true" signature="1904:2057" ph="UPDATE curso... " />
-                <marker date="1508811434397" expanded="true" signature="1904:2058" ph="UPDATE curso... " />
-                <marker date="1508811434397" expanded="true" signature="1904:2105" ph="UPDATE curso... " />
-                <marker date="1508811434397" expanded="true" signature="1904:2106" ph="UPDATE curso... " />
-                <marker date="1508811434397" expanded="true" signature="2385:2419" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductoDAO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/ProductoDAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <marker date="1508988999733" expanded="true" signature="274:578" ph="SELECT prod.... producto" />
-                <marker date="1508988999733" expanded="true" signature="869:1173" ph="SELECT prod.... producto" />
-                <marker date="1508988999733" expanded="true" signature="1891:1907" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:1910" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:1948" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:1949" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2002" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2003" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2059" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2060" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2111" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2112" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2165" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2166" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2213" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2214" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2250" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2251" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2294" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2295" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2348" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2349" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2397" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="1891:2398" ph="UPDATE produ... " />
-                <marker date="1508988999733" expanded="true" signature="2793:3492" ph="INSERT INTO producto... " />
-                <marker date="1508988999733" expanded="true" signature="3759:3799" ph="DELETE FROM " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -266,7 +180,6 @@
         <option value="$PROJECT_DIR$/dao/CategoriaDAO.php" />
         <option value="$PROJECT_DIR$/dao/MarcaDAO.php" />
         <option value="$PROJECT_DIR$/action/agregarMarca.php" />
-        <option value="$PROJECT_DIR$/dao/L1DAO.php" />
         <option value="$PROJECT_DIR$/action/agregarProducto.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/action/agregarMedioPago.php" />
@@ -276,11 +189,13 @@
         <option value="$PROJECT_DIR$/dbo/L1_Productos.php" />
         <option value="$PROJECT_DIR$/dao/L1_ProductosDAO.php" />
         <option value="$PROJECT_DIR$/dao/ProductoDAO.php" />
-        <option value="$PROJECT_DIR$/js/dataRetrieval.js" />
         <option value="$PROJECT_DIR$/action/productoData.php" />
         <option value="$PROJECT_DIR$/action/addToList.php" />
         <option value="$PROJECT_DIR$/detalleLista.php" />
+        <option value="$PROJECT_DIR$/js/dataRetrieval.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/dao/L1DAO.php" />
+        <option value="$PROJECT_DIR$/action/l1Data.php" />
       </list>
     </option>
   </component>
@@ -418,12 +333,12 @@
       <workItem from="1508848537012" duration="4846000" />
       <workItem from="1508893854108" duration="24000" />
       <workItem from="1508898090310" duration="10067000" />
-      <workItem from="1508974220356" duration="10585000" />
+      <workItem from="1508974220356" duration="17579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73645000" />
+    <option name="totallyTimeSpent" value="80639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="36" width="1374" height="709" extended-state="0" />
@@ -459,13 +374,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../AleEagle/usuariosAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dbo/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -758,22 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/L1DAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-          <folding>
-            <marker date="1508815663906" expanded="true" signature="255:413" ph="SELECT l1.*,... l1" />
-            <marker date="1508815663906" expanded="true" signature="619:807" ph="SELECT l1.*,... l1" />
-            <marker date="1508815663906" expanded="true" signature="619:808" ph="SELECT l1.*,... l1" />
-            <marker date="1508815663906" expanded="true" signature="1051:1065" ph="INSERT INTO L1... " />
-            <marker date="1508815663906" expanded="true" signature="1051:1139" ph="INSERT INTO L1... " />
-            <marker date="1508815663906" expanded="true" signature="1435:1570" ph="UPDATE L1 SE... " />
-            <marker date="1508815663906" expanded="true" signature="1829:1857" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/CursoDAO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -792,14 +684,6 @@
             <marker date="1508811434397" expanded="true" signature="1904:2106" ph="UPDATE curso... " />
             <marker date="1508811434397" expanded="true" signature="2385:2419" ph="DELETE FROM " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/action/cursoData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,30 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/dataRetrieval.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbo/Producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbo/L1_Productos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/action/agregarLista.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -909,10 +769,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administracion.php">
+    <entry file="file://$PROJECT_DIR$/action/cursoData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="29" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbo/Producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dataRetrieval.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/L1DAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding>
+            <marker date="1508995805345" expanded="true" signature="255:413" ph="SELECT l1.*,... l1" />
+            <marker date="1508995805345" expanded="true" signature="627:721" ph="SELECT l1.id... l1" />
+            <marker date="1508995805345" expanded="true" signature="627:722" ph="SELECT l1.id... l1" />
+            <marker date="1508995805345" expanded="true" signature="937:1125" ph="SELECT l1.*,... l1" />
+            <marker date="1508995805345" expanded="true" signature="937:1126" ph="SELECT l1.*,... l1" />
+            <marker date="1508995805345" expanded="true" signature="1369:1383" ph="INSERT INTO L1... " />
+            <marker date="1508995805345" expanded="true" signature="1369:1457" ph="INSERT INTO L1... " />
+            <marker date="1508995805345" expanded="true" signature="1753:1888" ph="UPDATE L1 SE... " />
+            <marker date="1508995805345" expanded="true" signature="2147:2175" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administracion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="107" column="89" lean-forward="true" selection-start-line="107" selection-start-column="89" selection-end-line="107" selection-end-column="153" />
           <folding>
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#6;n#table#0;n#body#0;n#!!top" expanded="true" />
             <marker date="1508980921497" expanded="true" signature="2396:2448" ph="..." />
@@ -922,11 +832,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/dbo/L1_Productos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/l1Data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding />
+          <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding>
+            <marker date="1509004172851" expanded="true" signature="423:601" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
