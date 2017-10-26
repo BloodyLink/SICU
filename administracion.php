@@ -17,6 +17,7 @@
     $marcasDao = new MarcaDAO();
     $productosDao = new ProductoDAO();
     $medioPagoDao = new MedioPagoDAO();
+    $l1Dao = new L1DAO();
 
     $regiones = $regionesDao->getRegionesAll();
     $colegios = $colegiosDao->getColegiosAll();
@@ -25,9 +26,10 @@
     $marcas = $marcasDao->getMarcasAll();
     $productos = $productosDao->getProductosAll();
     $mediosPago = $medioPagoDao->getMediosPagoAll();
+    $l1 = $l1Dao->getL1All();
 
 //echo "<pre>";
-//print_r($mediosPago);
+//print_r($l1);
 //echo "<pre>";
 
 //    var_dump($regiones);
@@ -310,8 +312,22 @@
         <td>
             <!-- Agregar Lista-->
             <h3>Agregar Lista</h3>
-            <form method="post" action="agregarLista.php">
+            <form method="post" action="action/agregarLista.php">
                 <input type="text" name="nombre_lista" placeholder="Nombre lista" />
+                <br>
+                <select name="idColegio" id="idColegioLista">
+                    <option>--Selecciona Colegio--</option>
+                    <?php
+                    foreach($colegios as $c){
+                        echo "<option value=" . $c->idColegio . ">" . $c->nombreColegio . " - " . $c->nombre_comuna . "</option>";
+                    }
+                    ?>
+                </select>
+                <br>
+                <select name="idCurso" id="idCurso2">
+                    <option>--Selecciona Curso--</option>
+                </select>
+                <br>
                 <input type="submit" value="Guardar" />
             </form>
 
@@ -330,7 +346,7 @@
                         echo $l->nombre_curso;
                         echo "</td>";
                         echo "<td>";
-                        echo "<a href="detalleLista.php">Detalle</a>";
+                        echo "<a href='detalleLista.php?id=" . $l->idL1 . "'>Detalle</a>";
                         echo "</td>";
                         echo "</tr>";
                     }
